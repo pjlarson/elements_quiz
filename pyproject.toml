@@ -1,0 +1,20 @@
+[project]
+name = "periodic-quiz"
+version = "1.0.0"
+description = "A CLI game to learn chemical symbols and atomic numbers of the periodic table"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+periodic-quiz = "periodic_quiz:main"
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[tool.pdm.dev-dependencies]
+dev = ["pytest>=7.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
