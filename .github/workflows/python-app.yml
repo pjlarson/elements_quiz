@@ -30,8 +30,7 @@ jobs:
       run: pdm build
 
     - name: Test with pytest
-      run: |
-        pytest
+      run: pdm run test
 
     - name: Lint with flake8
       run: pdm run lint

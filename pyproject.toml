@@ -18,6 +18,7 @@ pythonpath = ["."]
 
 [tool.pdm.scripts]
 lint = "flake8 periodic_quiz/ --count --select=E9,F63,F7,F82 --show-source --statistics"
+test = "python -m pytest"
 
 [dependency-groups]
 dev = [
