@@ -109,7 +109,8 @@ class PeriodicQuiz:
             print(f"Correct! Atomic number {atomic_num} is {name} (valence: {valence}, discovered: {year})")
             return True
         elif is_close_match(answer, name):
-            print(f"Close enough! Atomic number {atomic_num} is {name} (valence: {valence}, discovered: {year}) (you typed: {answer})")
+            print(f"Close enough! Atomic number {atomic_num} is {name} (valence: {valence}, "
+                  f"discovered: {year}) (you typed: {answer})")
             return True
         else:
             print(f"Incorrect. Atomic number {atomic_num} is {name} ({symbol}, valence: {valence}, discovered: {year})")

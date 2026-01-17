@@ -12,9 +12,15 @@ periodic-quiz = "periodic_quiz:main"
 requires = ["pdm-backend"]
 build-backend = "pdm.backend"
 
-[tool.pdm.dev-dependencies]
-dev = ["pytest>=7.0"]
-
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["."]
+
+[tool.pdm.scripts]
+lint = "flake8 periodic_quiz/ --count --select=E9,F63,F7,F82 --show-source --statistics"
+
+[dependency-groups]
+dev = [
+    "pytest>=7.0",
+    "flake8>=7.3.0",
+]
