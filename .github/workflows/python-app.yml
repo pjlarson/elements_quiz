@@ -24,7 +24,7 @@ jobs:
       with:
         python-version: "3.10"
     - name: Install dependencies
-      run: pdm install --no-dev
+      run: pdm install
 
     - name: Build package
       run: pdm build
