@@ -1,7 +1,6 @@
 """Periodic Quiz - Learn the periodic table through interactive quizzes."""
 
 from .game import PeriodicQuiz
-from .elements import ELEMENTS
 
 
 def main():
